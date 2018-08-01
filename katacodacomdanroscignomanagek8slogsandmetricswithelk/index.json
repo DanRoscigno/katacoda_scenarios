@@ -1,0 +1,40 @@
+{
+  "title": "Manage k8s logs and metrics with ELK",
+  "description": "To manage an application you need logs and metrics from the app, and the infrastructure.  In a Kubernetes environment you want the logs and metrics from the application, the nodes, pods, containers, etc. all in one place. Usinng Elasticsearch, Kibana, and Beats allows you to collect, search, analyze and visualize all of your data in one place.",
+  "details": {
+    "steps": [
+      {
+        "title": "Step 1 - Start Kubernetes",
+        "text": "step1.md"
+      },
+      {
+        "title": "Step 2 - Deploy the sample application",
+        "text": "step2.md"
+      },
+      {
+        "title": "Step 3 - Create a Kubernetes Secret",
+        "text": "step3.md"
+      },
+      {
+        "title": "Step 4 - Deploy Filebeat",
+        "text": "step4.md"
+      },
+      {
+        "title": "Step 5 - View your logs in Kibana",
+        "text": "step5.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "terminal-terminal"
+  },
+  "backend": {
+    "imageid": "kubernetes-cluster"
+  }
+}
