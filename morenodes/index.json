@@ -41,7 +41,7 @@
     }
   },
   "environment": {
-    "uilayout": "terminal-terminal-iframe",
+    "uilayout": "terminal-terminal",
     "showdashboard": true,
     "dashboard": "Guestbook"
   },
