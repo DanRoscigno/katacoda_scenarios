@@ -30,14 +30,8 @@
     "assets": {
       "host01": [
         {
-          "file": "guestbook.yaml",
-          "target": "~/"
-        }
-      ],
-      "host01": [
-        {
-          "file": "filebeat-kubernetes.yaml",
-          "target": "~/"
+          "file": "*",
+          "target": "/root"
         }
       ]
     },
