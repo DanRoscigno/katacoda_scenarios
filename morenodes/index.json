@@ -41,11 +41,11 @@
     }
   },
   "environment": {
-    "uilayout": "terminal-terminal",
+    "uilayout": "terminal-iframe",
     "showdashboard": true,
     "dashboard": "Guestbook"
   },
   "backend": {
-    "imageid": "kubernetes-cluster"
+    "imageid": "kubernetes-cluster-running"
   }
 }
