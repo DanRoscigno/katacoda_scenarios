@@ -2,9 +2,6 @@
   "title": "Manage k8s logs and metrics with ELK",
   "description": "Manage your application, Docker, and Kubernetes logs and metrics with ELK",
   "details": {
-    "intro": {
-      "courseData": "launch.sh",
-  },
     "steps": [
       {
         "title": "Step 1 - Start Kubernetes",
@@ -28,7 +25,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md"
+      "text": "intro.md",
+      "courseData": "launch.sh"
+    },
+    "finish": {
+      "text": "finish.md"
     },
     "assets": {
       "host01": [
@@ -37,9 +38,6 @@
           "target": "/root"
         }
       ]
-    },
-    "finish": {
-      "text": "finish.md"
     }
   },
   "environment": {
