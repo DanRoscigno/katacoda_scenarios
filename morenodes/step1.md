@@ -3,7 +3,7 @@ Start your Kubernetes cluster by running *launch.sh*:
 
 Wait until init finishes on host1 and then:
 
-`kubeadm join --token=102952.1a7dd4cc8d1f4cc6 [[HOST_IP]]:6443`{{execute HOST2}}
+`kubeadm join --token=102952.1a7dd4cc8d1f4cc6 --discovery-token-unsafe-skip-ca-verification [[HOST_IP]]:6443`{{execute HOST2}}
 
 ```
 sudo cp /etc/kubernetes/admin.conf $HOME/
