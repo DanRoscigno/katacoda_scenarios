@@ -27,6 +27,20 @@
     "intro": {
       "text": "intro.md"
     },
+    "assets": {
+      "host01": [
+        {
+          "file": "guestbook.yaml",
+          "target": "~/"
+        }
+      ],
+      "host01": [
+        {
+          "file": "filebeat.yaml",
+          "target": "~/"
+        }
+      ]
+    },
     "finish": {
       "text": "finish.md"
     }
