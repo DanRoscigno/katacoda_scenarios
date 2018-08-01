@@ -40,10 +40,12 @@
     }
   },
   "environment": {
-    "uilayout": "terminal-terminal"
+    "uilayout": "terminal-iframe",
+    "showdashboard": true,
+    "dashboard": "Guestbook"
   },
   "backend": {
-    "port": 8080,
+    "port": 80,
     "imageid": "kubernetes"
   }
 }
