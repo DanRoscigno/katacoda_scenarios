@@ -1,0 +1,52 @@
+{
+  "title": "Manage k8s logs with ELK",
+  "description": "Manage your application, Docker, and Kubernetes logs with ELK",
+  "details": {
+    "steps": [
+      {
+        "title": "Step 1 - Start Kubernetes",
+        "text": "step1.md"
+      },
+      {
+        "title": "Step 2 - Deploy the sample application",
+        "text": "step2.md"
+      },
+      {
+        "title": "Step 3 - Create a Kubernetes Secret",
+        "text": "step3.md"
+      },
+      {
+        "title": "Step 4 - Deploy Filebeat",
+        "text": "step4.md"
+      },
+      {
+        "title": "Step 5 - View your logs in Kibana",
+        "text": "step5.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "courseData": "launch.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "*",
+          "target": "/root"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "uilayout": "terminal-terminal-iframe",
+    "showdashboard": true,
+    "dashboard": "Guestbook"
+  },
+  "backend": {
+    "port": 30080,
+    "imageid": "kubernetes-cluster"
+  }
+}
