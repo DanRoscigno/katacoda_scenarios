@@ -46,7 +46,7 @@
     "dashboard": "Guestbook"
   },
   "backend": {
-    "ports": [30080,8080],
+    "port": 30080,
     "imageid": "kubernetes-cluster"
   }
 }
