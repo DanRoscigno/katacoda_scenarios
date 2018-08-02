@@ -44,7 +44,7 @@
     "uilayout": "editor-terminal",
     "uieditorpath": "/root/course",
     "showdashboard": true,
-    "dashboards": [{"Guestbook": "Display 30080", "port": 30080}]
+    "dashboards": [{"Guestbook": "Display:30080", "port": 30080}]
   },
   "backend": {
     "imageid": "kubernetes-cluster-running"
