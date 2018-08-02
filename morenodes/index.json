@@ -4,7 +4,7 @@
   "details": {
     "steps": [
       {
-        "title": "Step 1 - Start Kubernetes",
+        "title": "Step 1 - Verify that Kubernetes is ready",
         "text": "step1.md"
       },
       {
@@ -43,7 +43,7 @@
   "environment": {
     "uilayout": "editor-terminal",
     "showdashboard": true,
-    "dashboard": "Guestbook"
+    "dashboards": [{"Guestbook": "Display 30080", "port": 30080}]
   },
   "backend": {
     "imageid": "kubernetes-cluster-running"
