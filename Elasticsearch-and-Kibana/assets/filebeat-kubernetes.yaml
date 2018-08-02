@@ -89,10 +89,10 @@ data:
 
 
     output.elasticsearch:
-      hosts: ["http://10.106.109.121:9200"]
+      hosts: ["http://elasticsearch:9200"]
       
     setup.kibana:
-      host: "10.98.241.242:5601"
+      host: "kibana-internal:5601"
     
 ---
 apiVersion: extensions/v1beta1

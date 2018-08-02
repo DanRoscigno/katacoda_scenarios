@@ -20,9 +20,10 @@ kind: Service
 metadata:
   name: elasticsearch
 spec:
+  ports:
+  - port: 9200
+    targetPort: 9200
   selector:
     app: es
-  ports:
-  - protocol: TCP
-    port: 9200
+    tier: backend
 ---

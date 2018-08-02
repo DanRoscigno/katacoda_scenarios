@@ -17,13 +17,22 @@ kind: Service
 metadata:
   name: kibana
 spec:
-  # if your cluster supports it, uncomment the following to automatically create
-  # an external load-balanced IP for the frontend service.
-  #type: LoadBalancer
   type: NodePort
   ports:
   - port: 5601
     nodePort: 30601
+  selector:
+    app: kibana
+    tier: frontend
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: kibana-internal
+spec:
+  ports:
+  - port: 5601
+    targetPort: 5601
   selector:
     app: kibana
     tier: frontend
