@@ -1,6 +1,6 @@
-Deploy the Guestbook application by running the *kubectl apply -f guestbook.yaml* command:
+Deploy the Guestbook application by running the *kubectl apply -f /root/course/guestbook.yaml* command:
 
-`kubectl apply -f guestbook.yaml`{{execute}}
+`kubectl apply -f /root/course/guestbook.yaml`{{execute}}
 
 Check to see if the pods are running:
 
