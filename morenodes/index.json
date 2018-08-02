@@ -40,9 +40,6 @@
       ]
     }
   },
- "files": [
-    "/root/course"
-  ],
   "environment": {
     "uilayout": "editor-terminal",
     "uieditorpath": "/root/course",
