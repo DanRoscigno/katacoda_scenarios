@@ -40,6 +40,9 @@
       ]
     }
   },
+ "files": [
+    "/root/course"
+  ],
   "environment": {
     "uilayout": "editor-terminal",
     "showdashboard": true,
