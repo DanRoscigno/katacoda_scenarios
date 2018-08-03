@@ -1,7 +1,13 @@
-Now deploy Filebeat.  Filebeat will automatically discover the running pods, find the proper files, configure Elasticsearch to parse the logs, and configure Kibana with sample visualizations and dashboards by looking at the available metadata and applying technology specific modules:
+Now deploy Kibana.
 
-`kubectl apply -f /root/course/filebeat-kubernetes.yaml`{{execute}}
+`kubectl apply -f /root/course/kibana.yaml`{{execute HOST1}}
 
-`kubectl get pods -n kube-system | grep filebeat`{{execute}}
+Verify that the kibana pod has started:
 
-If the Filbeat pods are not running wait a minute and retry, to see detailed information you can run the command *kubectl describe pod <filebeat pod name> -n kube-system*
+`kubectl get pods`{{execute HOST1}}
+
+Check the Kibana logs.  
+
+`kubectl logs kibana`{{execute HOST1}}
+
+When Kibana is connected to Elasticsearch it is ready.  Toward the end of the log file you  will see an entry telling you that the state has gone to *green*

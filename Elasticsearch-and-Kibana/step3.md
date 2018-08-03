@@ -1,11 +1,15 @@
-Filebeat will use connection and authentication information stored in a Kubernetes secret.  Populate the secret *dynamic-logging* by editing the files *ELASTIC_PASSWORD* and *CLOUD_ID* and then running the *kubectl create secret* command.
+Filebeat will connect to Elasticsearch and Kibana running in the Kubernetes Cluster.  Deploy Elasticsearch:
 
-`vi /root/course/ELASTIC_PASSWORD`{{execute}}
+`kubectl apply -f /root/course/es.yaml`{{execute HOST1}}
 
-`vi /root/course/CLOUD_ID`{{execute}}
+Note: This YAML file is deploying Elasticsearch without a persistent store, as this course is meant ot live for ten or twenty minutes.  Do not use es.yaml to deploy Elasticsearch for real use.  You can use our official Docker images found at http://docker.elastic/.co
 
-`kubectl create secret generic dynamic-logging \
-    --from-file=/root/course/ELASTIC_PASSWORD \
-    --from-file=/root/course/CLOUD_ID \
-    --namespace=kube-system`{{execute}}
+Verify that Elasticsearch is running by checking the pod:
 
+`kubectl get pods`{{execute HOST1}}
+
+and by checking the logs:
+
+`kubectl logs es`{{execute HOST1}}
+
+When Elasticsearch is fully initialized you will see a log entry indicating that the license file is valid.
