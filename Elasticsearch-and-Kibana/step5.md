@@ -4,4 +4,4 @@ Now deploy Filebeat.  Filebeat will automatically discover the running pods, fin
 
 `kubectl get pods -n kube-system | grep filebeat`{{execute}}
 
-If the Filbeat pods are not running wait a minute and retry, to see detailed information you can run the command *kubectl describe pod <filebeat pod name> -n kube-system*
+If the Filbeat pod are not running wait a minute and retry, to see detailed information you can run the command *kubectl describe pod <filebeat pod name> -n kube-system*
