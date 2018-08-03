@@ -13,3 +13,5 @@ and by checking the logs:
 `kubectl logs es`{{execute HOST1}}
 
 When Elasticsearch is fully initialized you will see a log entry indicating that the license file is valid.
+
+![Elasticsearch log](https://user-images.githubusercontent.com/25182304/43620198-8830e4a6-969f-11e8-9c05-0cd6ffc5ab96.png)
