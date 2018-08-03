@@ -1,1 +1,0 @@
-*To manage an application you need logs and metrics from the app, and the infrastructure.  In a Kubernetes environment you want the logs and metrics from the application, the nodes, pods, containers, etc. all in one place. Usinng Elasticsearch, Kibana, and Beats allows you to collect, search, analyze and visualize all of your data in one place.*
