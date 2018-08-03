@@ -41,7 +41,7 @@ data:
                     enabled: true
                     var.hosts: ["${data.host}:${data.port}"]
             - condition.contains:
-                kubernetes.labels.tier: frontend
+                kubernetes.container.name: apache
               config:
                 - module: apache2
                   access:

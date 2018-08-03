@@ -286,7 +286,7 @@ spec:
         tier: frontend
     spec:
       containers:
-      - name: php-redis
+      - name: apache-php
         image: gcr.io/google-samples/gb-frontend:v4
         resources:
           requests:
