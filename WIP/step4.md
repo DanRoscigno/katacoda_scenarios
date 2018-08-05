@@ -2,7 +2,7 @@
 
 `kubectl apply -f /root/course/kibana.yaml`{{execute HOST1}}
 
-### Verify that Kibana is running 
+#### Verify that Kibana is running 
 
 Check the pods of Kibana:
 
