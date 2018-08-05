@@ -4,11 +4,11 @@
 
 #### Verify that Kibana is running 
 
-Check the pods of Kibana:
+Check the pods for Kibana:
 
 `kubectl get pods`{{execute HOST1}}
 
-Check the Kibana logs.  
+Check the Kibana logs:  
 
 `kubectl logs kibana`{{execute HOST1}}
 
