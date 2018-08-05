@@ -8,7 +8,7 @@ metadata:
 spec:
   containers:
   - name: kibana
-    image: docker.elastic.co/kibana/kibana:6.3.2
+    image: docker.elastic.co/kibana/kibana:6.2.4
     ports:
     - containerPort: 5601
 ---
