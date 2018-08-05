@@ -8,4 +8,4 @@ Check to see if the pods are running:
 
 If all the pods are not running, then wait a minute and run the `kubectl get pods` command again. 
 
-Once the pods are all running, switch to the *Guestbook* tab and enter some messages into the Guestbook.
+Once the pods are all running, switch to the **Guestbook** tab and enter some messages into the Guestbook.
