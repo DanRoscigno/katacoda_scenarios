@@ -8,6 +8,6 @@ Filebeat will automatically discover the running pods, find the proper files, co
 
 `kubectl get pods -n kube-system | grep filebeat`{{execute HOST1}}
 
-If the Filebeat pod is not running, wait a minute and retry. To see detailed information, you can run the command `kubectl describe pod <filebeat pod name> -n kube-system`
+If the Filebeat pod is not running, wait a minute and retry. To see detailed information, you can run the describe command:
 
-`kubectl describe pods -l k8s-app=filebeat-dynamic -n kube-system`{{execute HOST1}}
+`kubectl describe po -l k8s-app=filebeat-dynamic -n kube-system`{{execute HOST1}}
