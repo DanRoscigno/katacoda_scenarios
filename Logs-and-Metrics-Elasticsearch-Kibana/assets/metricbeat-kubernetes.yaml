@@ -22,7 +22,6 @@ spec:
         args: [
           "-c", "/etc/metricbeat.yml",
           "-e",
-          "setup",
         ]
         env:
         - name: ELASTICSEARCH_HOST
