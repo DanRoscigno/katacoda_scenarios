@@ -52,7 +52,7 @@ data:
           - system
           - pod
           # only uncomment - event here if you are not using kube-state-metrics
-          #- event
+          - event
           - container
           - volume
         hosts: ["localhost:10255"]
@@ -109,7 +109,7 @@ spec:
       hostNetwork: true
       containers:
       - name: metricbeat
-        image: docker.elastic.co/beats/metricbeat:6.2.3
+        image: docker.elastic.co/beats/metricbeat:6.3.2
         #imagePullPolicy: Always
         args: [
           "-c", "/etc/metricbeat.yml",
@@ -185,48 +185,48 @@ data:
       
 ---
 # Deploy singleton instance in the whole cluster for some unique data sources, like kube-state-metrics
-apiVersion: apps/v1beta1
-kind: Deployment
-metadata:
-  name: metricbeat
-  namespace: kube-system
-  labels:
-    k8s-app: metricbeat
-    kubernetes.io/cluster-service: "true"
-spec:
-  template:
-    metadata:
-      labels:
-        k8s-app: metricbeat
-        kubernetes.io/cluster-service: "true"
-    spec:
-      serviceAccountName: metricbeat
-      containers:
-      - name: metricbeat
-        image: docker.elastic.co/beats/metricbeat:6.2.3
-        #imagePullPolicy: Always
-        args: [
-          "-c", "/etc/metricbeat.yml",
-          "-e",
-        ]
-        securityContext:
-          runAsUser: 0
-        resources:
-          limits:
-            memory: 200Mi
-          requests:
-            cpu: 100m
-            memory: 100Mi
-        volumeMounts:
-        - name: config
-          mountPath: /etc/metricbeat.yml
-          readOnly: true
-          subPath: metricbeat.yml
-      volumes:
-      - name: config
-        configMap:
-          defaultMode: 0600
-          name: metricbeat-deployment-config
+#apiVersion: apps/v1beta1
+#kind: Deployment
+#metadata:
+  #name: metricbeat
+  #namespace: kube-system
+  #labels:
+    #k8s-app: metricbeat
+    #kubernetes.io/cluster-service: "true"
+#spec:
+  #template:
+    #metadata:
+      #labels:
+        #k8s-app: metricbeat
+        #kubernetes.io/cluster-service: "true"
+    #spec:
+      #serviceAccountName: metricbeat
+      #containers:
+      #- name: metricbeat
+        #image: docker.elastic.co/beats/metricbeat:6.3.2
+        ##imagePullPolicy: Always
+        #args: [
+          #"-c", "/etc/metricbeat.yml",
+          #"-e",
+        #]
+        #securityContext:
+          #runAsUser: 0
+        #resources:
+          #limits:
+            #memory: 200Mi
+          #requests:
+            #cpu: 100m
+            #memory: 100Mi
+        #volumeMounts:
+        #- name: config
+          #mountPath: /etc/metricbeat.yml
+          #readOnly: true
+          #subPath: metricbeat.yml
+      #volumes:
+      #- name: config
+        #configMap:
+          #defaultMode: 0600
+          #name: metricbeat-deployment-config
 ---
 apiVersion: v1
 kind: ConfigMap
@@ -266,7 +266,7 @@ spec:
       containers:
       - name: metricbeat-setup
         #imagePullPolicy: Always
-        image: docker.elastic.co/beats/metricbeat:6.2.3
+        image: docker.elastic.co/beats/metricbeat:6.3.2
         args: [
           "-c", "/etc/metricbeat.yml",
           "-e",
