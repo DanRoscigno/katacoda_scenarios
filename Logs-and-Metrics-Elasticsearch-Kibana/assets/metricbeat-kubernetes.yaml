@@ -107,6 +107,9 @@ data:
 
     output.elasticsearch:
       hosts: ['${ELASTICSEARCH_HOST:elasticsearch}:${ELASTICSEARCH_PORT:9200}']
+
+    setup.kibana:
+      host: "kibana-internal.default.svc.cluster.local:5601"
 ---
 apiVersion: v1
 kind: ConfigMap
