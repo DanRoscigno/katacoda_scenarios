@@ -15,7 +15,7 @@ Click the stat on the far right of the page to make your index pattern the defau
 
 ![mno](https://user-images.githubusercontent.com/25182304/43741884-e1462d84-999d-11e8-9977-45ae5a2975da.png)
 
-Select yes or know to share basic usage information with Elastic
+Select yes or no to share basic usage information with Elastic
 
 ![stu](https://user-images.githubusercontent.com/25182304/43741889-e78c71e4-999d-11e8-8d4a-830c752cf136.png)
 
