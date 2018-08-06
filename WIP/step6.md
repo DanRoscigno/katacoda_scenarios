@@ -5,7 +5,5 @@ Launch Kibana by clicking on the **Kibana** tab at the top of your terminal. If 
 #### Explore Data
 - [Kibana](https://[[HOST_SUBDOMAIN]]-30601-[[KATACODA_HOST]].environments.katacoda.com/app/kibana)
 - [Apache Dashboard](https://[[HOST_SUBDOMAIN]]-30601-[[KATACODA_HOST]].environments.katacoda.com/app/kibana#/dashboard/Filebeat-Apache2-Dashboard)
-- [Apache Saved Search](https://[[HOST_SUBDOMAIN]]-30601-[[KATACODA_HOST]].environments.katacoda.com/app/kibana)
-- [Redis Dashboard](https://[[HOST_SUBDOMAIN]]-30601-[[KATACODA_HOST]].environments.katacoda.com/app/kibana)
-
-![Apache Dashboard](https://user-images.githubusercontent.com/25182304/43620197-881f7536-969f-11e8-8631-3d88d6a1d386.png)
+- [Apache Saved Search](https://[[HOST_SUBDOMAIN]]-30601-[[KATACODA_HOST]].environments.katacoda.com/app/kibana#/discover/Apache2-access-logs)
+- [Redis Dashboard](https://[[HOST_SUBDOMAIN]]-30601-[[KATACODA_HOST]].environments.katacoda.com/app/kibana#/dashboards?notFound=dashboard&filter=redis)
