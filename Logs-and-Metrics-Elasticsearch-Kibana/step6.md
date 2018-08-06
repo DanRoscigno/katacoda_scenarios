@@ -6,6 +6,12 @@ Metricbeat will automatically discover the running pods, find the proper files o
 
 `kubectl apply -f /root/course/metricbeat-setup.yaml`{{execute HOST1}}
 
+#### Verify that the setup is running
+
+`kubectl get pods -n kube-system | grep metricbeat`{{execute HOST1}}
+
+#### Deploy Metricbeat
+
 `kubectl apply -f /root/course/metricbeat-kubernetes.yaml`{{execute HOST1}}
 
 #### Verify that Metricbeat is running
