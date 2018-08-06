@@ -1,5 +1,5 @@
 {
-  "title": "WIP2 - Kubernetes Monitoring using Elasticsearch",
+  "title": "Kubernetes Monitoring using Elasticsearch",
   "description": "Monitoring your k8s applications and infra using the Elastic Stack (aka ELK stack)",
   "details": {
     "steps": [
