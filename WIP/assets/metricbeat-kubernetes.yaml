@@ -85,11 +85,9 @@ data:
     processors:
       - add_cloud_metadata:
 
-    cloud.auth: elastic:${ELASTIC_PASSWORD}
-    cloud.id: ${CLOUD_ID}
-    
     output.elasticsearch:
-
+      hosts: ["http://elasticsearch.default.svc.cluster.local:9200"]
+      
 ---
 # Deploy a Metricbeat instance per node for node metrics retrieval
 apiVersion: extensions/v1beta1
@@ -118,17 +116,6 @@ spec:
           "-e",
           "-system.hostfs=/hostfs",
         ]
-        env:
-        - name: CLOUD_ID
-          valueFrom:
-            secretKeyRef:
-              name: dynamic-logging
-              key: CLOUD_ID
-        - name: ELASTIC_PASSWORD
-          valueFrom:
-            secretKeyRef:
-              name: dynamic-logging
-              key: ELASTIC_PASSWORD
         securityContext:
           runAsUser: 0
         resources:
@@ -193,10 +180,9 @@ data:
     processors:
       - add_cloud_metadata:
 
-    cloud.auth: elastic:${ELASTIC_PASSWORD}
-    cloud.id: ${CLOUD_ID}
-    
     output.elasticsearch:
+      hosts: ["http://elasticsearch.default.svc.cluster.local:9200"]
+      
 ---
 # Deploy singleton instance in the whole cluster for some unique data sources, like kube-state-metrics
 apiVersion: apps/v1beta1
@@ -223,17 +209,6 @@ spec:
           "-c", "/etc/metricbeat.yml",
           "-e",
         ]
-        env:
-        - name: CLOUD_ID
-          valueFrom:
-            secretKeyRef:
-              name: dynamic-logging
-              key: CLOUD_ID
-        - name: ELASTIC_PASSWORD
-          valueFrom:
-            secretKeyRef:
-              name: dynamic-logging
-              key: ELASTIC_PASSWORD
         securityContext:
           runAsUser: 0
         resources:
@@ -271,12 +246,11 @@ data:
       index.number_of_shards: 1
       index.codec: best_compression
 
-    cloud.auth: elastic:${ELASTIC_PASSWORD}
-    cloud.id: ${CLOUD_ID}
-    
     output.elasticsearch:
-
+      hosts: ["http://elasticsearch.default.svc.cluster.local:9200"]
+      
     setup.kibana:
+      host: "kibana-internal.default.svc.cluster.local:5601"
 ---
 # Run metricbeat setup
 apiVersion: batch/v1
@@ -298,17 +272,6 @@ spec:
           "-e",
           "setup",
         ]
-        env:
-        - name: CLOUD_ID
-          valueFrom:
-            secretKeyRef:
-              name: dynamic-logging
-              key: CLOUD_ID
-        - name: ELASTIC_PASSWORD
-          valueFrom:
-            secretKeyRef:
-              name: dynamic-logging
-              key: ELASTIC_PASSWORD
         securityContext:
           runAsUser: 0
         volumeMounts:
