@@ -1,30 +1,30 @@
 {
-  "title": "Work in progress - Manage k8s logs with ELK",
-  "description": "Manage your application, Docker, and Kubernetes logs with ELK",
+  "title": "WIP - Kubernetes Monitoring using Elasticsearch",
+  "description": "Monitoring your k8s applications and infra using the Elastic Stack (aka ELK stack)",
   "details": {
     "steps": [
       {
-        "title": "Step 1 - Verify that Kubernetes is ready",
+        "title": "1. Verify that Kubernetes is ready",
         "text": "step1.md"
       },
       {
-        "title": "Step 2 - Deploy the sample application",
+        "title": "2. Deploy the sample application",
         "text": "step2.md"
       },
       {
-        "title": "Step 3 - Deploy Elasticsearch",
+        "title": "3. Deploy Elasticsearch",
         "text": "step3.md"
       },
       {
-        "title": "Step 4 - Deploy Kibana",
+        "title": "4. Deploy Kibana",
         "text": "step4.md"
       },
       {
-        "title": "Step 5 - Deploy Filebeat",
+        "title": "5. Deploy Filebeat",
         "text": "step5.md"
       },
       {
-        "title": "Step 6 - View your logs in Kibana",
+        "title": "6. Explore your logs & metrics in Kibana",
         "text": "step6.md"
       }
     ],
