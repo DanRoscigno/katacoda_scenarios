@@ -1,5 +1,5 @@
 {
-  "title": "WIP - Kubernetes Monitoring using Elasticsearch",
+  "title": "WIP2 - Kubernetes Monitoring using Elasticsearch",
   "description": "Monitoring your k8s applications and infra using the Elastic Stack (aka ELK stack)",
   "details": {
     "steps": [
@@ -24,8 +24,12 @@
         "text": "step5.md"
       },
       {
-        "title": "6. Explore your logs & metrics in Kibana",
+        "title": "6. Deploy Metricbeat",
         "text": "step6.md"
+      },
+      {
+        "title": "7. Explore your logs & metrics in Kibana",
+        "text": "step7.md"
       }
     ],
     "intro": {

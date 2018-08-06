@@ -1,9 +1,13 @@
-#### Launch Kibana 
+#### Deploy Metricbeat
 
-Launch Kibana by clicking on the **Kibana** tab at the top of your terminal. If you made entries in the Guestbook earlier in the demo, you should be able to see these in the Kibana Discover app, and in the [Filebeat Apache2] Access and Error Logs dashboard. If you have not not yet made entries in the Guestbook, go ahead and do so now. The **Guestbook** tab is right next to the **Kibana** tab at the top of the terminal.
+Metricbeat will automatically discover the running pods, find the proper files or ports to collect metrics from, configure Elasticsearch to parse the data, and configure Kibana with sample visualizations and dashboards by looking at the available metadata and applying technology specific modules:
 
-#### Explore Data
-- [Apache Dashboard](https://[[HOST_SUBDOMAIN]]-30601-[[KATACODA_HOST]].environments.katacoda.com/app/kibana#/dashboard/Filebeat-Apache2-Dashboard)
-- [Apache Saved Search](https://[[HOST_SUBDOMAIN]]-30601-[[KATACODA_HOST]].environments.katacoda.com/app/kibana#/discover/Apache2-access-logs)
-- [Redis Dashboard](https://[[HOST_SUBDOMAIN]]-30601-[[KATACODA_HOST]].environments.katacoda.com/app/kibana#/dashboards?notFound=dashboard&filter=redis)
-- [Kibana](https://[[HOST_SUBDOMAIN]]-30601-[[KATACODA_HOST]].environments.katacoda.com/app/kibana)
+`kubectl apply -f /root/course/metricbeat-kubernetes.yaml`{{execute HOST1}}
+
+#### Verify that Filebeat is running
+
+`kubectl get pods -n kube-system | grep metricbeat`{{execute HOST1}}
+
+If the Filebeat pod is not running, wait a minute and retry. To see detailed information, you can run the describe command:
+
+`kubectl describe po -l k8s-app=metricbeat -n kube-system`{{execute HOST1}}
