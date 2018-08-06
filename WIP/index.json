@@ -1,6 +1,6 @@
 {
-  "title": "Work in progress - Manage k8s logs with ELK",
-  "description": "Manage your application, Docker, and Kubernetes logs with ELK",
+  "title": "WIP - Kubernetes Monitoring using Elasticsearch",
+  "description": "Monitoring your k8s applications and infra using the Elastic Stack (aka ELK stack)",
   "details": {
     "steps": [
       {
