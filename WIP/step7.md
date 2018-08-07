@@ -18,6 +18,6 @@ Metricbeat will automatically discover the running pods, find the proper files o
 
 `kubectl get pods -n kube-system | grep metricbeat`{{execute HOST1}}
 
-If the Metricbeat pod is not running, wait a minute and retry. To see detailed information, you can run the describe command:
+There should be three metricbeat entries, the metricbeat-setup-\* pod should be completed, and two other metricbeat pods will eventually be running.  One metricbeat is for the cluster level metrics and events coming from kube-state-metrics, and the other is for the metrics coming from the pods on node01. If the Metricbeat pods are not running, wait a minute and retry. To see detailed information, you can run the describe command:
 
 `kubectl describe po -l k8s-app=metricbeat -n kube-system`{{execute HOST1}}
