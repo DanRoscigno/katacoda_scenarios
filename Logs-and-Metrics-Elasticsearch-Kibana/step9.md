@@ -1,5 +1,8 @@
 
+Event is one of the metric sets in the Metricbeat Kubernetes module, and it lets us know when things happen.  In this case we will look for notifications related to scaling k8s deployments up or down.
+
 #### Scale your deployments and see new pods being monitored
+
 List the existing deployments:
 `kubectl get deployments`{{execute HOST1}}
 
