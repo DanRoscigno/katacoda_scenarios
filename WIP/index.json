@@ -24,12 +24,16 @@
         "text": "step5.md"
       },
       {
-        "title": "6. Deploy Metricbeat",
+        "title": "6. Deploy kube-state-metrics",
         "text": "step6.md"
       },
       {
-        "title": "7. Explore your logs & metrics in Kibana",
+        "title": "7. Deploy Metricbeat",
         "text": "step7.md"
+      },
+      {
+        "title": "8. Explore your logs & metrics in Kibana",
+        "text": "step8.md"
       }
     ],
     "intro": {

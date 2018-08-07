@@ -1,5 +1,5 @@
 #!/bin/sh
-apt-get install golang
+apt-get -y install golang
 
 export GOROOT=/usr/local/go
 
