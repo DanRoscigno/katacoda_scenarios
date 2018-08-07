@@ -1,4 +1,3 @@
-#### Deploy Kibana
 
 `kubectl apply -f /root/course/kibana.yaml`{{execute HOST1}}
 
