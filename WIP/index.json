@@ -34,6 +34,10 @@
       {
         "title": "8. Explore your logs & metrics in Kibana",
         "text": "step8.md"
+      },
+      {
+        "title": "9. Examine events from kube-state-metrics",
+        "text": "step9.md"
       }
     ],
     "intro": {
