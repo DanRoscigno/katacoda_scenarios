@@ -8,7 +8,7 @@ Metricbeat will automatically discover the running pods, find the proper files o
 
 #### Verify that the setup completes
 
-If you run the following `get pods` command several times you will see the pod go from Creating to running, and then completed.  Do not proceed until it completes.
+If you run the following `get pods` command several times you will see the pod go from ContainerCreating to Running, and then Completed.  Do not proceed until it completes.
 
 `kubectl get pods -n kube-system | grep metricbeat`{{execute HOST1}}
 
