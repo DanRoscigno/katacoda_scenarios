@@ -9,6 +9,7 @@
       },
       {
         "title": "2. Deploy the sample application",
+        "courseData": "kube-state.sh",
         "text": "step2.md"
       },
       {
@@ -24,8 +25,7 @@
         "text": "step5.md"
       },
       {
-        "title": "6. Deploy kube-state-metrics",
-        "courseData": "kube-state.sh",
+        "title": "6. Verify kube-state-metrics",
         "text": "step6.md"
       },
       {
