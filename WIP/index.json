@@ -24,7 +24,7 @@
         "text": "step5.md"
       },
       {
-        "title": "6. Verify kube-state-metrics",
+        "title": "6. Deploy kube-state-metrics",
         "text": "step6.md"
       },
       {
