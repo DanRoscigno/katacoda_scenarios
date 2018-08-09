@@ -14,5 +14,5 @@ kube-state-metrics is a container provided by Kubernetes to make the state of po
 
 You should see one running kube-state-metrics pod, a second one may show up in the list in Terminating state:
 
-`kubectl get po -l k8s-app=kube-state-metrics`{{execute HOST1}}
+`kubectl get po -l k8s-app=kube-state-metrics -n kube-system`{{execute HOST1}}
 
