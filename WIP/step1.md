@@ -1,4 +1,4 @@
-A two-node Kubernetes cluster started when you began the scenario. Run the `kubectl get nodes` command to see if the nodes are in the *Ready* state:
+A Kubernetes cluster started when you began the scenario. Run the `kubectl get nodes` command to see if the nodes are in the *Ready* state:
 
 `kubectl get nodes`{{execute HOST1}}
 
