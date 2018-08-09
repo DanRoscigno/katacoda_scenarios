@@ -1,6 +1,6 @@
-#### Deploy Filebeat
+Filebeat will automatically discover the running pods, find the proper files, configure Elasticsearch to parse the logs, and configure Kibana with sample visualizations and dashboards by looking at the available metadata and applying technology specific modules.
 
-Filebeat will automatically discover the running pods, find the proper files, configure Elasticsearch to parse the logs, and configure Kibana with sample visualizations and dashboards by looking at the available metadata and applying technology specific modules:
+#### Deploy Filebeat
 
 `kubectl apply -f /root/course/filebeat-kubernetes.yaml`{{execute HOST1}}
 
