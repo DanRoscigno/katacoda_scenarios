@@ -9,7 +9,7 @@
       },
       {
         "title": "2. Deploy the sample application",
-        "courseData": "kube-state.sh",
+        #"courseData": "kube-state.sh",
         "text": "step2.md"
       },
       {
