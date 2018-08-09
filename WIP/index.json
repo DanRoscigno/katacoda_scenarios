@@ -25,6 +25,7 @@
       },
       {
         "title": "6. Deploy kube-state-metrics",
+        "courseData": "kube-state.sh",
         "text": "step6.md"
       },
       {
