@@ -9,7 +9,7 @@ Check the pods for Kibana:
 
 Check the Kibana logs:  
 
-`kubectl logs kibana`{{execute HOST1}}
+`kubectl logs kibana|grep "Status changed from yellow to green"`{{execute HOST1}}
 
 Once Kibana is connected to Elasticsearch, it is ready.  Toward the end of the log file, you  will see an entry telling you that the state has gone to **green**
 
