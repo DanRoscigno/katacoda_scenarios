@@ -3,10 +3,9 @@
 To monitor an application running in Kubernetes (k8s), you need logs and metrics from the app, as well as, the k8s environment it's running in. Using Elasticsearch, Kibana, and Beats allows you to collect, search, analyze and visualize all of this data about the app and the k8s (pods, containers, etc) in one place. 
 
 ### Let's take a look at the goal
-This is one of the out of the box dashboards that you will see once you deploy the Elastic Stack in this Katacoda environment.  This is the Docker metrics dashboard that ships with Metricbeat.  It shows an overview of the CPU and Memory use of every container, allows you to drill in to a specific container, and the containers per node.  Looking at the dashboard is much easier than running the equivalent kubectl get, top, describe, etc. commands 
-![Docker Dash](https://user-images.githubusercontent.com/25182304/44352061-5474ca80-a471-11e8-9436-feb1580b6134.png)
+This is one of the out of the box dashboards that you will see once you deploy the Elastic Stack in this Katacoda environment.  This is the Docker metrics dashboard that ships with Metricbeat.  It shows an overview of the CPU and Memory use of every container, allows you to drill in to a specific container, and the containers per node.  Looking at the dashboard is much easier than running the equivalent kubectl get, top, describe, etc. commands.
 
-* In general, you don't need to type.  Most of the time, you 
+![Docker Dash](https://user-images.githubusercontent.com/25182304/44353691-c2bb8c00-a475-11e8-8d0e-9578c5c8cc47.png)
 
 ### A Quick Katacoda Primer
 If this is your first time using Katacoda, let me introduce some of the cool ideas:
