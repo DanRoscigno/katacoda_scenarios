@@ -14,7 +14,7 @@ Checking the pods:
 
 Checking the logs:
 
-`kubectl logs es`{{execute HOST1}}
+`kubectl logs es | grep "mode [basic] - valid"`{{execute HOST1}}
 
 When Elasticsearch is fully initialized, you will see a log entry indicating that the license file is valid.
 
