@@ -15,9 +15,3 @@ kube-state-metrics is a container provided by Kubernetes to make the state of po
 You should see one running kube-state-metrics pod, a second one may show up in the list in Terminating state:
 
 `kubectl get po -l k8s-app=kube-state-metrics -n kube-system`{{execute HOST1}}
-
-git clone https://github.com/kubernetes/heapster.git /root/course/heapster
-kubectl create -f /root/course/heapster/deploy/kube-config/influxdb/
-kubectl create -f /root/course/heapster/deploy/kube-config/rbac/heapster-rbac.yaml
-kubectl get pods -n kube-system|grep heapster
-
