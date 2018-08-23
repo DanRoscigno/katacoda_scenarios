@@ -1,5 +1,3 @@
-#### Deploy heapster
-
 heapster is a container provided by Kubernetes to make metrics about Nodes, pods, etc. available.  If you ever ran `kubectl top pods` you have interacted with heapster. Metricbeat polls heapster for metrics and provides them to Elasticsearch. heapster can use various backends, we will deploy InfluxDB here.
 
 ### Clone the heapster repo:
