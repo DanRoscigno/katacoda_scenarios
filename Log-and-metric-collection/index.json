@@ -5,39 +5,43 @@
     "steps": [
       {
         "title": "1. Verify that Kubernetes is ready",
-        "text": "step1-verify-that-kubernetes-is-ready.md"
+        "text": "step01-verify-that-kubernetes-is-ready.md"
       },
       {
         "title": "2. Deploy the sample application",
-        "text": "step2-deploy-the-sample-application.md"
+        "text": "step02-deploy-the-sample-application.md"
       },
       {
         "title": "3. Deploy Elasticsearch",
-        "text": "step3-deploy-elasticsearch.md"
+        "text": "step03-deploy-elasticsearch.md"
       },
       {
         "title": "4. Deploy Kibana",
-        "text": "step4-deploy-kibana.md"
+        "text": "step04-deploy-kibana.md"
       },
       {
         "title": "5. Deploy Filebeat",
-        "text": "step5-deploy-filebeat.md"
+        "text": "step05-deploy-filebeat.md"
       },
       {
         "title": "6. Deploy kube-state-metrics",
-        "text": "step6-deploy-kube-state-metrics.md"
+        "text": "step06-deploy-kube-state-metrics.md"
       },
       {
         "title": "7. Deploy Metricbeat",
-        "text": "step7-deploy-metricbeat.md"
+        "text": "step07-deploy-metricbeat.md"
       },
       {
-        "title": "8. Explore your logs & metrics in Kibana",
-        "text": "step8-explore-your-logs-metrics-in-kibana.md"
+        "title": "7. Deploy heapster",
+        "text": "step08-deploy-heapster.md"
       },
       {
-        "title": "9. Examine events from kube-state-metrics",
-        "text": "step9-examine-events-from-kube-state-metrics.md"
+        "title": "9. Explore your logs & metrics in Kibana",
+        "text": "step09-explore-your-logs-metrics-in-kibana.md"
+      },
+      {
+        "title": "10. Examine events from kube-state-metrics",
+        "text": "step10-examine-events-from-kube-state-metrics.md"
       }
     ],
     "intro": {
