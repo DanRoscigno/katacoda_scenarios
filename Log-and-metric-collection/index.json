@@ -8,32 +8,32 @@
         "text": "step01-verify-that-kubernetes-is-ready.md"
       },
       {
-        "title": "2. Deploy the sample application",
-        "text": "step02-deploy-the-sample-application.md"
+        "title": "2. Deploy heapster",
+        "text": "step02-deploy-heapster.md"
       },
       {
-        "title": "3. Deploy Elasticsearch",
-        "text": "step03-deploy-elasticsearch.md"
+        "title": "3. Deploy the sample application",
+        "text": "step03-deploy-the-sample-application.md"
       },
       {
-        "title": "4. Deploy Kibana",
-        "text": "step04-deploy-kibana.md"
+        "title": "4. Deploy Elasticsearch",
+        "text": "step04-deploy-elasticsearch.md"
       },
       {
-        "title": "5. Deploy Filebeat",
-        "text": "step05-deploy-filebeat.md"
+        "title": "5. Deploy Kibana",
+        "text": "step05-deploy-kibana.md"
       },
       {
-        "title": "6. Deploy kube-state-metrics",
-        "text": "step06-deploy-kube-state-metrics.md"
+        "title": "6. Deploy Filebeat",
+        "text": "step06-deploy-filebeat.md"
       },
       {
-        "title": "7. Deploy Metricbeat",
-        "text": "step07-deploy-metricbeat.md"
+        "title": "7. Deploy kube-state-metrics",
+        "text": "step07-deploy-kube-state-metrics.md"
       },
       {
-        "title": "7. Deploy heapster",
-        "text": "step08-deploy-heapster.md"
+        "title": "8. Deploy Metricbeat",
+        "text": "step08-deploy-metricbeat.md"
       },
       {
         "title": "9. Explore your logs & metrics in Kibana",
