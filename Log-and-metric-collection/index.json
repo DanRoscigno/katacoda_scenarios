@@ -42,6 +42,10 @@
       {
         "title": "10. Examine events from kube-state-metrics",
         "text": "step10-examine-events-from-kube-state-metrics.md"
+      },
+      {
+        "title": "11. Use the CLI to query heapster",
+        "text": "step11-use-the-cli-to-query-heapster.md"
       }
     ],
     "intro": {
