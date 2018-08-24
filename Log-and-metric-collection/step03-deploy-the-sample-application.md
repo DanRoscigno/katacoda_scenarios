@@ -6,7 +6,7 @@ Deploy the Guestbook application by running the `kubectl apply` command:
 
 `kubectl get pods`{{execute}}
 
-If all the pods are not running, then wait a minute and run the `kubectl get pods` command again. 
+If all the pods (a frontend, and two redis) are not running, then wait a minute and run the `kubectl get pods` command again. 
 
 ### Make some entries in the Guestbook
 

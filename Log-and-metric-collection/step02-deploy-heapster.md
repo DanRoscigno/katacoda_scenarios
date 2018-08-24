@@ -16,4 +16,4 @@ heapster is a container provided by Kubernetes to make metrics about Nodes, pods
 
 You should see one running heapster pod:
 
-`kubectl get pods -n kube-system|grep heapster`{{execute HOST1}}
+`kubectl get pods -n kube-system | grep -E "monitoring|heapster"`{{execute HOST1}}
