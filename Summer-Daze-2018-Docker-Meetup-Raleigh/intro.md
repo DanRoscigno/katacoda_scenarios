@@ -7,8 +7,8 @@
 ### Elastic specific resources
 - [Container Monitoring](https://www.elastic.co/docker-kubernetes-container-monitoring) home at Elastic
 - Our [Official Containers](https://www.docker.elastic.co/) at Elastic
-- Dan’s [scenarios](https://www.katacoda.com/dan_roscigno/) at Katacoda
-- [Source](https://github.com/DanRoscigno/katacoda_scenarios) for Dan’s scenarios
+- Elastic’s [scenarios](https://www.katacoda.com/dan_roscigno/) at Katacoda
+- [Source](https://github.com/DanRoscigno/katacoda_scenarios) for Elastic’s scenarios
 
 ### Why?
 To monitor an application running in Kubernetes (k8s), you need logs and metrics from the app, as well as, the k8s environment it's running in. Using Elasticsearch, Kibana, and Beats allows you to collect, search, analyze and visualize all of this data about the app and the k8s (pods, containers, etc) in one place. 
