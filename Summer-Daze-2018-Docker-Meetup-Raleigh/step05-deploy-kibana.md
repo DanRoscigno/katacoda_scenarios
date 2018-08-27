@@ -5,7 +5,7 @@
 
 It takes about 90 seconds for Kibana to download to Katacoda and complete the strtup procedure.  While this happens let's look at Elastic Application Performance Management (APM).  Elastic APM shows you the internal workings of your app, and all you do is include a library and provide the URL of an APM Server instance.
 
-[Elastic APM demo](https://demo.elastic.co/app/apm#/?_g=(refreshInterval:(display:Off,pause:!f,value:0),time:(from:now-24h,mode:quick,to:now)))
+[Elastic APM demo](https://demo.elastic.co/app/apm)
 
 #### Verify that Kibana is running 
 
