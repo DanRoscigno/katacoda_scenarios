@@ -4,11 +4,11 @@ heapster is a container provided by Kubernetes to make metrics about Nodes, pods
 
 `git clone https://github.com/kubernetes/heapster.git /root/course/heapster`{{execute HOST1}}
 
-### Deploy InfluxDB
+### Deploy InfluxDB, Grafana, and heapster
 
 `kubectl create -f /root/course/heapster/deploy/kube-config/influxdb/`{{execute HOST1}}
 
-### Deploy heapster
+### Configure RBAC for heapster
 
 `kubectl create -f /root/course/heapster/deploy/kube-config/rbac/heapster-rbac.yaml`{{execute HOST1}}
 
