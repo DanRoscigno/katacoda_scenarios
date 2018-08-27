@@ -1,0 +1,78 @@
+{
+  "title": "Demo and resources for Summer Daze 2018 Docker Meetup in Raleigh, NC",
+  "description": "Comparison of CLI and automated collection, search, and visualization of logs and metrics in a container environment",
+  "details": {
+    "steps": [
+      {
+        "title": "1. Verify that Kubernetes is ready",
+        "text": "step01-verify-that-kubernetes-is-ready.md"
+      },
+      {
+        "title": "2. Deploy heapster",
+        "text": "step02-deploy-heapster.md"
+      },
+      {
+        "title": "3. Deploy the sample application",
+        "text": "step03-deploy-the-sample-application.md"
+      },
+      {
+        "title": "4. Deploy Elasticsearch",
+        "text": "step04-deploy-elasticsearch.md"
+      },
+      {
+        "title": "5. Deploy Kibana",
+        "text": "step05-deploy-kibana.md"
+      },
+      {
+        "title": "6. Deploy Filebeat",
+        "text": "step06-deploy-filebeat.md"
+      },
+      {
+        "title": "7. Deploy kube-state-metrics",
+        "text": "step07-deploy-kube-state-metrics.md"
+      },
+      {
+        "title": "8. Deploy Metricbeat",
+        "text": "step08-deploy-metricbeat.md"
+      },
+      {
+        "title": "9. Explore your logs & metrics in Kibana",
+        "text": "step09-explore-your-logs-metrics-in-kibana.md"
+      },
+      {
+        "title": "10. Examine events from kube-state-metrics",
+        "text": "step10-examine-events-from-kube-state-metrics.md"
+      },
+      {
+        "title": "11. Use the CLI to query heapster",
+        "text": "step11-use-the-cli-to-query-heapster.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "*",
+          "target": "/root/course"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "uilayout": "terminal",
+    "uieditorpath": "/root/course",
+    "showdashboard": true,
+    "dashboards": [
+      { "name": "Guestbook", "port": 30080, "host": "host01" },
+      { "name": "Kibana", "port": 30601 }
+    ]
+  },
+  "backend": {
+    "imageid": "kubernetes-cluster-running"
+  }
+}
