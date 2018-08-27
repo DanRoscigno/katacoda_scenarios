@@ -1,6 +1,7 @@
 {
   "title": "Demo and resources for Summer Daze 2018 Docker Meetup in Raleigh, NC",
   "description": "Comparison of CLI and automated collection, search, and visualization of logs and metrics in a container environment",
+  "time": "20 - 30 minutes",
   "details": {
     "steps": [
       {
