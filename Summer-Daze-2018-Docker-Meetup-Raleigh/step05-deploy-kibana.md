@@ -11,6 +11,8 @@ It takes about 90 seconds for Kibana to download to Katacoda and complete the st
 
 The best way to see how easy instrumenting your apps is to do it.  Just hop over to https://www.elastic.co/start and follow the instructions to download and run Elasticsearch and Kibana, then click on the Kibana logo at the top left corner of your Kibana instance and click **Add APM**.
 
+Here is how I added APM to a Nodejs app running in Docker for Mac.  See the top few lines:
+
 ![APM added to Node](https://user-images.githubusercontent.com/25182304/44667296-695cdb00-a9e8-11e8-91ff-a3d47a12805a.png)
 
 #### Verify that Kibana is running 
