@@ -12,7 +12,7 @@ There is plenty of information available in the metadata that Docker and Kuberne
 
 If we look at the Labels section we can see:
 ```yaml
-Labels:         app=redis
+Labels:       app=redis
                 pod-template-hash=3398316229
                 role=master
                 tier=backend
