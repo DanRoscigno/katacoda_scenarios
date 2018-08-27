@@ -4,7 +4,7 @@ Filebeat will connect to Elasticsearch and Kibana running in the Kubernetes clus
 
 `kubectl apply -f /root/course/es.yaml`{{execute HOST1}}
 
-**Note**: This YAML file is deploying Elasticsearch without a persistent store, as this course is meant to live for less than 30 minutes.  Do not use es.yaml to deploy Elasticsearch for real use. You should use our official Docker images found at http://docker.elastic.co
+**Note**: This YAML file is deploying Elasticsearch without a persistent store, as this course is meant to live for less than 30 minutes.  Do not use es.yaml to deploy Elasticsearch for real use. You should use our official Docker images found at http://www.docker.elastic.co
 
 ### Check out some demos
 
