@@ -1,19 +1,15 @@
 ### Welcome
 
-demo.elastic.co
-Everything shown here is running in Docker containers
-Docker, Kubernetes, Apache Redis dashboards
-These sample dashboards are provided in the modules with our lightweight shippers named Beats (Filebeat, Metricbeat, Packetbeat, Auditbeat, Heartbeat, etc.).  
+### Places to learn Docker and Kubernetes
+- Katacoda.com
+- Play with Docker
 
-Places to learn Docker and Kubernetes
-Katacoda.com
-Play with Docker
+### Elastic specific resources
+- [Container Monitoring](https://www.elastic.co/docker-kubernetes-container-monitoring) home at Elastic
+- Dan’s [scenarios](https://www.katacoda.com/dan_roscigno/) at Katacoda
+- [Source](https://github.com/DanRoscigno/katacoda_scenarios) for Dan’s scenarios
 
-Elastic specific resources
-[Container Monitoring](https://www.elastic.co/docker-kubernetes-container-monitoring) home at Elastic
-Dan’s [scenarios](https://www.katacoda.com/dan_roscigno/) at Katacoda
-[Source](https://github.com/DanRoscigno/katacoda_scenarios) for Dan’s scenarios
-
+### Why?
 To monitor an application running in Kubernetes (k8s), you need logs and metrics from the app, as well as, the k8s environment it's running in. Using Elasticsearch, Kibana, and Beats allows you to collect, search, analyze and visualize all of this data about the app and the k8s (pods, containers, etc) in one place. 
 
 ### Let's take a look at the goal
