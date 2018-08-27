@@ -6,6 +6,7 @@
 
 ### Elastic specific resources
 - [Container Monitoring](https://www.elastic.co/docker-kubernetes-container-monitoring) home at Elastic
+- Our [Official Containers](https://docker.elastic.co/) at Elastic
 - Dan’s [scenarios](https://www.katacoda.com/dan_roscigno/) at Katacoda
 - [Source](https://github.com/DanRoscigno/katacoda_scenarios) for Dan’s scenarios
 
