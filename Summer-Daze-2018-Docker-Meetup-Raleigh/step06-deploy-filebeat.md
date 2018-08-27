@@ -10,7 +10,10 @@ There is plenty of information available in the metadata that Docker and Kuberne
 
 `kubectl describe pod -l role=master`{{execute HOST1}}
 
-If we look at the Labels section we can see:
+If we look just at the Labels section we can see:
+
+`kubectl describe pod -l role=master | grep -A 3 "^Labels:"`{{execute HOST1}}
+
 ```yaml
 Labels:       app=redis
                 pod-template-hash=3398316229
