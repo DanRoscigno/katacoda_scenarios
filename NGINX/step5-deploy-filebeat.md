@@ -4,6 +4,10 @@ Filebeat will automatically discover the running pods, find the proper files, co
 
 `kubectl apply -f /root/course/filebeat-kubernetes.yaml`{{execute HOST1}}
 
+### Unpack sample logs
+
+`/root/course/unpackNGINXlogs.sh`{{execute HOST2}}
+
 #### Verify that Filebeat is running
 
 `kubectl get pods -n kube-system | grep filebeat`{{execute HOST1}}
