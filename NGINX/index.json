@@ -36,12 +36,6 @@
           "file": "*.yaml",
           "target": "/root/course"
         }
-      ],
-      "host02": [
-        {
-          "file": "unpackNGINXlogs.sh",
-          "target": "/root/course"
-        }
       ]
     }
   },
