@@ -19,7 +19,7 @@ data:
       - module: nginx
         access:
           enabled: true
-          var.paths: ["/var/log/nginx"]
+          var.paths: ["/var/nginx/nginx_access*"]
       - module: system
         syslog:
           enabled: true
@@ -94,10 +94,10 @@ data:
 
     output.elasticsearch:
       hosts: ["http://elasticsearch.default.svc.cluster.local:9200"]
-      
+
     setup.kibana:
       host: "kibana-internal.default.svc.cluster.local:5601"
-    
+
 ---
 apiVersion: extensions/v1beta1
 kind: DaemonSet
@@ -137,8 +137,8 @@ spec:
           mountPath: /var/log
           readOnly: true
         - name: nginxlogs
-          mountPath: /var/log/nginx
-          readOnly: false
+          mountPath: /var/nginx
+          readOnly: true
         - name: varlibdockercontainers
           mountPath: /var/lib/docker/containers
           readOnly: true
