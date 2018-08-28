@@ -1,0 +1,55 @@
+{
+  "title": "NGINX WIP",
+  "description": "Monitoring NGINX using the Elastic Stack (aka ELK stack) with Filebeat and modules",
+  "details": {
+    "steps": [
+      {
+        "title": "1. Verify that Kubernetes is ready",
+        "text": "step1-verify-that-kubernetes-is-ready.md"
+      },
+      {
+        "title": "3. Deploy Elasticsearch",
+        "text": "step3-deploy-elasticsearch.md"
+      },
+      {
+        "title": "4. Deploy Kibana",
+        "text": "step4-deploy-kibana.md"
+      },
+      {
+        "title": "5. Deploy Filebeat",
+        "text": "step5-deploy-filebeat.md"
+      },
+      {
+        "title": "8. Explore your logs & metrics in Kibana",
+        "text": "step8-explore-your-logs-metrics-in-kibana.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "courseData": "unpackNGINXlogs.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "*",
+          "target": "/root/course"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "uilayout": "terminal",
+    "uieditorpath": "/root/course",
+    "showdashboard": true,
+    "dashboards": [
+      { "name": "Guestbook", "port": 30080, "host": "host01" },
+      { "name": "Kibana", "port": 30601 }
+    ]
+  },
+  "backend": {
+    "imageid": "kubernetes-cluster-running"
+  }
+}
