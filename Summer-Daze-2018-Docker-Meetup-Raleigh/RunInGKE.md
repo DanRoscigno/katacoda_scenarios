@@ -1,26 +1,17 @@
+### Download the YAML
+`git clone https://github.com/DanRoscigno/katacoda_scenarios.git`
+
+`cd katacoda_scenarios/Summer-Daze-2018-Docker-Meetup-Raleigh`
+
+
+### Verify Kubernetes is ready
 
 `kubectl get nodes`
 
 If the command returns *NotReady*, then wait a couple of seconds before retrying.
-heapster is a container provided by Kubernetes to make metrics about Nodes, pods, etc. available.  If you ever ran `kubectl top pods` you have interacted with heapster. Metricbeat polls heapster for metrics and provides them to Elasticsearch. heapster can use various backends, we will deploy InfluxDB here.
 
-### Clone the heapster repo:
+### Deploy a sample app
 
-`git clone https://github.com/kubernetes/heapster.git /root/course/heapster`
-
-### Deploy InfluxDB, Grafana, and heapster
-
-`kubectl create -f /root/course/heapster/deploy/kube-config/influxdb/`
-
-### Configure RBAC for heapster
-
-`kubectl create -f /root/course/heapster/deploy/kube-config/rbac/heapster-rbac.yaml`
-
-### Verify that heapster is available
-
-You should see one running heapster pod:
-
-`kubectl get pods -n kube-system | grep -E "monitoring|heapster"`
 Deploy the Guestbook application by running the `kubectl apply` command:
 
 `kubectl apply -f /root/course/guestbook.yaml`
@@ -34,7 +25,6 @@ If all the pods (a frontend, and two redis) are not running, then wait a minute 
 ### Make some entries in the Guestbook
 
 Once the pods are all running, switch to the **Guestbook** tab and enter some messages into the Guestbook.
-Filebeat will connect to Elasticsearch and Kibana running in the Kubernetes cluster.  
 
 #### Deploy Elasticsearch:
 
