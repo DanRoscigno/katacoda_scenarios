@@ -29,4 +29,26 @@ This takes five minutes, maybe longer.  Run the command and make a coffee:
 Run the compose:
 ```
 cd /root/course/opbeans/
-docker-compose -f ./docker-compose-elastic-cloud.yml up```{{execute HOST1}}
+docker-compose -f ./docker-compose-elastic-cloud.yml up
+```
+{{execute HOST1}}
+
+### Look at the results in Kibana
+
+### Shutdown your container
+
+```
+cd /root/course/opbeans/
+docker-compose -f ./docker-compose-elastic-cloud.yml up
+```
+
+### Add a custom span
+
+
+### Rebuild
+```
+cd /root/course/opbeans
+docker-compose -f docker-compose-elastic-cloud.yml up --force-recreate
+```
+{{execute HOST1}}
+
