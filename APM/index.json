@@ -5,7 +5,6 @@
   "details": {
     "steps": [
       {
-        "title": "1. Do it all",
         "text": "step01.md"
       }
     ],
@@ -31,8 +30,5 @@
   },
   "backend": {
     "imageid": "ubuntu"
-  },
-  "files": [
-      "environment"
-  ]
+  }
 }
