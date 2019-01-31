@@ -4,8 +4,13 @@ A Kubernetes cluster started when you began the scenario. Run the `kubectl get n
 
 blah blah blah
 
-Edit the environment file and set your cloud ID, elastic password, and APM Secret:
-`/root/course/environment`{{open}}
+You need four environment variables set to get the APM measurements to your Elasticsearch Service in Elastic Cloud instance.  Here is where you get them:
+
+![Docker Dash](https://user-images.githubusercontent.com/25182304/52064722-2ed10e80-2543-11e9-86bf-37fbd49fb24c.png)
+
+![Docker Dash](mages.githubusercontent.com/25182304/52064727-309ad200-2543-11e9-9097-24e3888455f7.png)
+
+Click on the file `environment` in the Katacoda UI and edit with your settings from the above two locations
 
 Source the environment variables:
 `source /root/course/environment`{{execute HOST1}}
