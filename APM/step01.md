@@ -34,7 +34,7 @@ docker-compose -f ./docker-compose-elastic-cloud.yml up```{{execute HOST1}}
 ### Look at the results in Kibana
 
 ### Shutdown your container
-`#CTRL-C`{{execute interrupt}}
+`CTRL-C`{{execute interrupt}}
 
 ```cd /root/course/opbeans/
 docker-compose -f ./docker-compose-elastic-cloud.yml up```{{execute HOST1}} 
