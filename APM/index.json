@@ -33,6 +33,6 @@
     "imageid": "ubuntu"
   },
   "files": [
-      "environment", "opbeans/opbeans/src/main/java/co/elastic/apm/opbeans/controllers/APIRestController.java"
+      "environment"
   ]
 }
