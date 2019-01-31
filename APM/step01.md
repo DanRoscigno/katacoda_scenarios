@@ -1,6 +1,6 @@
 A Kubernetes cluster started when you began the scenario. Run the `kubectl get nodes` command to see if the nodes are in the *Ready* state:
 
-`git clone https://github.com/elastic/opbeans-java.git`{{execute HOST1}}
+`git clone https://github.com/roncohen/opbeans-java.git /root/course/opbeans`{{execute HOST1}}
 
 blah blah blah
 
@@ -16,4 +16,6 @@ Source the environment variables:
 `source /root/course/environment`{{execute HOST1}}
 
 Run the compose:
-`docker-compose -f /root/course/docker-compose-cloud.yml up`{{execute HOST1}}
+```
+cd /root/course/opbeans/
+`docker-compose -f ./docker-compose-elastic-cloud.yml up```{{execute HOST1}}
