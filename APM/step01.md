@@ -18,6 +18,9 @@ You need two environment variables set to get the APM measurements to your Elast
 ### Set the environment variables
 
 Click on the file `environment` in the Katacoda UI and edit with your settings from the above location
+`/root/course/environment`{{open}}
+
+or `environment`{{open}}
 
 Source the environment variables:
 `source /root/course/environment`{{execute HOST1}}
