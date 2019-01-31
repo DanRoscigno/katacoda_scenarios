@@ -17,10 +17,8 @@ You need two environment variables set to get the APM measurements to your Elast
 
 ### Set the environment variables
 
-Click on the file `environment` in the Katacoda UI and edit with your settings from the above location
-`/root/course/environment`{{open}}
-
-or `environment`{{open}}
+Edit the file `environment` in the Katacoda UI (just click the document icon to the right) and edit with your settings from the above location
+`environment`{{open}}
 
 Source the environment variables:
 `source /root/course/environment`{{execute HOST1}}
@@ -41,6 +39,8 @@ docker-compose -f ./docker-compose-elastic-cloud.yml up```{{execute HOST1}}
 docker-compose -f ./docker-compose-elastic-cloud.yml up```{{execute HOST1}} 
 
 ### Add a custom span
+
+Edit APIRestController.java `opbeans/opbeans/src/main/java/co/elastic/apm/opbeans/controllers/APIRestController.java`{{open}}
 
 
 ### Rebuild
