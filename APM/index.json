@@ -27,10 +27,7 @@
   "environment": {
     "uilayout": "editor-terminal",
     "uieditorpath": "/root/course",
-    "showdashboard": true,
-    "dashboards": [
-      { "name": "Spring App", "port": 30080, "host": "host01" }
-    ]
+    "showdashboard": false
   },
   "backend": {
     "imageid": "ubuntu"
