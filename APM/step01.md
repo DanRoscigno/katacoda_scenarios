@@ -14,3 +14,6 @@ Click on the file `environment` in the Katacoda UI and edit with your settings f
 
 Source the environment variables:
 `source /root/course/environment`{{execute HOST1}}
+
+Run the compose:
+`docker-compose -f /root/course/docker-compose-cloud.yml up`{{execute HOST1}}
