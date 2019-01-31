@@ -18,4 +18,4 @@ Source the environment variables:
 Run the compose:
 ```
 cd /root/course/opbeans/
-`docker-compose -f ./docker-compose-elastic-cloud.yml up```{{execute HOST1}}
+docker-compose -f ./docker-compose-elastic-cloud.yml up```{{execute HOST1}}
