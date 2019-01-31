@@ -13,7 +13,7 @@ This version has a modified docker-compose file to use the APM Server in Elastic
 
 You need two environment variables set to get the APM measurements to your Elasticsearch Service in Elastic Cloud instance.  Here is where you get them:
 
-![APM URL](https://user-images.githubusercontent.com/25182304/52064727-309ad200-2543-11e9-9097-24e3888455f7.png)
+![APM URL](https://user-images.githubusercontent.com/25182304/52072876-0ef61680-2554-11e9-9068-ad626da21397.png)
 
 Click on the file `environment` in the Katacoda UI and edit with your settings from the above location
 
