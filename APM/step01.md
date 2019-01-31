@@ -1,16 +1,21 @@
-A Kubernetes cluster started when you began the scenario. Run the `kubectl get nodes` command to see if the nodes are in the *Ready* state:
+### Create a default Elasticsearch Service in Elastic Cloud instance
+As always, take note of the `elastic` password.  All of the rest of the information you can copy later.
+
+https://cloud.elastic.co/login?redirectTo=%2Fdeployments
+
+### Clone the opbeans demo
+
+This version has a modified docker-compose file to use the APM Server in Elastic Cloud.
 
 `git clone https://github.com/roncohen/opbeans-java.git /root/course/opbeans`{{execute HOST1}}
 
-blah blah blah
+### Set some environment variables
 
-You need four environment variables set to get the APM measurements to your Elasticsearch Service in Elastic Cloud instance.  Here is where you get them:
-
-![Cloud Creds](https://user-images.githubusercontent.com/25182304/52064722-2ed10e80-2543-11e9-86bf-37fbd49fb24c.png)
+You need two environment variables set to get the APM measurements to your Elasticsearch Service in Elastic Cloud instance.  Here is where you get them:
 
 ![APM URL](https://user-images.githubusercontent.com/25182304/52064727-309ad200-2543-11e9-9097-24e3888455f7.png)
 
-Click on the file `environment` in the Katacoda UI and edit with your settings from the above two locations
+Click on the file `environment` in the Katacoda UI and edit with your settings from the above location
 
 Source the environment variables:
 `source /root/course/environment`{{execute HOST1}}
