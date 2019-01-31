@@ -1,3 +1,4 @@
 export ELASTIC_CLOUD_ID=<your cloud ID>
 export ELASTIC_CLOUD_CREDENTIALS=elastic:<your elastic password>
-export APM_SERVER_SECRET=<your APM Server Secret>
+export ELASTIC_APM_SECRET_TOKEN=<your APM Server Secret>
+export ELASTIC_APM_SERVER_URLS=<your APM Server URL>
