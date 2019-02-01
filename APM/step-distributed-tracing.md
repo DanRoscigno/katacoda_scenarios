@@ -8,60 +8,12 @@ On the APM team we have an "opbeans" application that is written in every progra
 
 Let's try to start it now.
 
-
 Run `git clone https://github.com/elastic/apm-integration-testing.git`{{execute HOST1}}
 
-As you know, Open Tracing is a vendor independent API. We will try to add custom Open Tracing custom instrumentation in this step.
+Then, run the following commands to start the other opbeans apps:
 
-First, you need to instantiate the `Tracer` globally in the application.
+```cd apm-integration-testing
+./scripts/compose.py start master --no-kibana --no-apm-server --with-opbeans-ruby --with-opbeans-node --with-opbeans-python --with-opbeans-go```{{execute HOST1}}
 
-Open `opbeans/opbeans/src/main/java/co/elastic/apm/opbeans/OpbeansApplication.java`{{open}}
-
-Add code that will register Elastic APM as the global tracer for Open Tracing `main`: 
-
-```
-GlobalTracer.register(new ElasticApmTracer());
-```
-
-You will need to add the right imports.
-
-Open APIRestController.java `opbeans/opbeans/src/main/java/co/elastic/apm/opbeans/controllers/APIRestController.java`{{open}} again.
-
-Replace your instrumentation @CaptureSpan instrumentation with an Open Tracing instrumentation:
-
-
-```
-@GetMapping("/products/{productId}")
-ProductDetail   (@PathVariable long productId) {
-    final Span span = tracer.buildSpan("OpenTracing product span")
-            .withTag("productId", Long.toString(productId))
-            .start();
-    try (Scope scope = tracer.scopeManager().activate(span, false)) {
-        return productRepository.getOneDetail(productId);
-    } finally {
-        span.finish();
-    }
-}
-```
-
-
-### Shutdown your container
-`CTRL-C`{{execute interrupt}}
-
-
-### Re-compile
-```cd /root/course/opbeans/
-docker-compose -f docker-compose-elastic-cloud.yml build```{{execute HOST1}} 
-
-
-### Re-start the application
-```
-docker-compose -f docker-compose-elastic-cloud.yml up --force-recreate```{{execute HOST1}}
-
-
-### Look at the results in Kibana
-
-1. When the application has started up again, generate some traffic by browser around the site.
-1. Then go look at the opbeans app in Kibana
-1. Find the "Product" transaction in Kibana and try to find your new Span and the tag you set.
+This will take a little while.
 

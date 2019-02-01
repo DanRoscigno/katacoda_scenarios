@@ -31,20 +31,10 @@ Run the compose:
 ```cd /root/course/opbeans/
 docker-compose -f ./docker-compose-elastic-cloud.yml up```{{execute HOST1}}
 
+
 ### Look at the results in Kibana
 
-### Shutdown your container
-`CTRL-C`{{execute interrupt}}
-
-```cd /root/course/opbeans/
-docker-compose -f ./docker-compose-elastic-cloud.yml up```{{execute HOST1}} 
-
-### Add a custom span
-
-Edit APIRestController.java `opbeans/opbeans/src/main/java/co/elastic/apm/opbeans/controllers/APIRestController.java`{{open}}
-
-
-### Rebuild
-```cd /root/course/opbeans
-docker-compose -f docker-compose-elastic-cloud.yml up --force-recreate```{{execute HOST1}}
+1. When the application has started up again, generate some traffic by browser around the site: https://[[HOST_SUBDOMAIN]]-8000-[[KATACODA_HOST]].environments.katacoda.com/
+1. Then go look at the opbeans app in Kibana
+1. Find the "Product" transaction in Kibana and try to find your new Span and the tag you set.
 
