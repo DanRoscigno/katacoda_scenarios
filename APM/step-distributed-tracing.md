@@ -1,4 +1,15 @@
-### Open Tracing
+### Distributed Tracing
+
+Distributed Tracing is the ability to follow a trace through multiple systems.
+
+We can demonstrate distributed tracing by booting up more services and have them talking to each other and then watch the traces generated.
+
+On the APM team we have an "opbeans" application that is written in every programming language that our agents support. We have a simple tool that boots them all up and make them talk to each other.
+
+Let's try to start it now.
+
+
+Run `git clone https://github.com/elastic/apm-integration-testing.git`{{execute HOST1}}
 
 As you know, Open Tracing is a vendor independent API. We will try to add custom Open Tracing custom instrumentation in this step.
 
