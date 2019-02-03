@@ -10,6 +10,8 @@ You will need an Elasticsearch Service in Elastic Cloud (https://cloud.elastic.c
 During the scenario you will deploy the sample application in Katacoda and then navigate around in the app.  You will then open Kibana (in your Elasticsearch Service instance) and open the APM application.  Here is what you will see (assuming that you generated some traffic by opening some of the pages in the app)
 ![APM App](https://user-images.githubusercontent.com/25182304/52180095-000ba000-27b0-11e9-9d52-2ea68bae7f92.png)
 
+Later in the scenario you will add a custom tag to a span, the instructions suggest adding the ProductID as a tag.  Here is what that looks like in the APM app in Kibana
+![Tag](https://user-images.githubusercontent.com/25182304/52180290-62fe3680-27b2-11e9-8450-794352957ea4.png)
 ### A Quick Katacoda Primer
 If this is your first time using Katacoda, let me introduce some of the cool ideas:
 
