@@ -36,7 +36,10 @@
   "environment": {
     "uilayout": "editor-terminal",
     "uieditorpath": "/root/course",
-    "showdashboard": false
+    "showdashboard": true,
+    "dashboards": [
+      { "name": "OpBeans Coffee", "port": 8000}
+    ]
   },
   "backend": {
     "imageid": "ubuntu"
