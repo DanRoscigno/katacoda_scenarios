@@ -21,7 +21,7 @@ Replace your instrumentation @CaptureSpan instrumentation with an Open Tracing i
 
 ```
 @GetMapping("/products/{productId}")
-ProductDetail   (@PathVariable long productId) {
+ProductDetail product(@PathVariable long productId) {
     final Span span = tracer.buildSpan("OpenTracing product span")
             .withTag("productId", Long.toString(productId))
             .start();
@@ -39,13 +39,11 @@ ProductDetail   (@PathVariable long productId) {
 
 
 ### Re-compile
-```cd /root/course/opbeans/
-docker-compose -f docker-compose-elastic-cloud.yml build```{{execute HOST1}} 
+```docker-compose -f docker-compose-elastic-cloud.yml build```{{execute HOST1}} 
 
 
 ### Re-start the application
-```
-docker-compose -f docker-compose-elastic-cloud.yml up --force-recreate```{{execute HOST1}}
+```docker-compose -f docker-compose-elastic-cloud.yml up --force-recreate```{{execute HOST1}}
 
 ### Look at the results in Kibana
 

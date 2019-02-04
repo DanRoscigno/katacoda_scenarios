@@ -12,6 +12,9 @@
       },
       {
         "text": "step-open-tracing.md"
+      },
+      {
+        "text": "step-distributed-tracing.md"
       }
     ],
     "intro": {
