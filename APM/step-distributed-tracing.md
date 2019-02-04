@@ -8,12 +8,13 @@ On the APM team we have an "opbeans" application that is written in every progra
 
 Let's try to start it now.
 
-Run `git clone https://github.com/elastic/apm-integration-testing.git`{{execute HOST1}}
+Run `git clone https://github.com/roncohen/apm-integration-testing.git`{{execute HOST1}}
 
 Then, run the following commands to start the other opbeans apps:
 
 ```cd apm-integration-testing
-./scripts/compose.py start master --no-kibana --no-apm-server --with-opbeans-ruby --with-opbeans-node --with-opbeans-python --with-opbeans-go```{{execute HOST1}}
+git checkout explicit-networks
+./scripts/compose.py start master --apm-server-url=$ELASTIC_APM_SERVER_URL --secret-token=$ELASTIC_APM_SECRET_TOKEN --no-apm-server --no-elasticsearch --no-kibana --with-opbeans-node --with-opbeans-ruby --with-opbeans-go  --with-metricbeat --with-filebeat```{{execute HOST1}}
 
 This will take a little while.
 
