@@ -10,6 +10,9 @@ Try setting :
  export ELASTIC_APM_TRACE_METHODS=co.elastic.apm.opbeans.*#*
 ```
 
+This will instrument every method in the on every class in the co.elastic.apm.opbeans package.
+
+Note: There's always a bit of overhead in instrumentation. `trace_methods` is not meant as a way to instrument every method in an application.
 
 ### Shutdown your container
 `CTRL-C`{{execute interrupt}}
@@ -23,6 +26,7 @@ No need to recompile! We didn't change any code 🎉
 
 ### Look at the results in Kibana
 
-1. Take a look at the transactions generated and see each individual method show up.
+1. Take a look at the transactions generated.
+For example, in `APIRestController#stats` you can see each individual method called.
 
 
