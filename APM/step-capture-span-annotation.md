@@ -30,6 +30,19 @@ Please add the tag to the span now.
 ```cd /root/course/opbeans/
 docker-compose -f docker-compose-elastic-cloud.yml build```{{execute HOST1}} 
 
+Don't worry if you see output along the lines of 
+
+```
+[ERROR] Error fetching link ...
+```
+
+or
+
+```
+WARNING: An illegal reflective access operation has occurred
+```
+
+Ignore those.
 
 ### Re-start the application
 ```
