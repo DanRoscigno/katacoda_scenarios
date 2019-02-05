@@ -14,7 +14,7 @@ Then, run the following commands to start the other opbeans apps:
 
 ```cd apm-integration-testing
 git checkout explicit-networks
-./scripts/compose.py start master --apm-server-url=$ELASTIC_APM_SERVER_URL --secret-token=$ELASTIC_APM_SECRET_TOKEN --no-apm-server --no-elasticsearch --no-kibana --with-opbeans-node --with-opbeans-ruby --with-opbeans-go  --with-metricbeat --with-filebeat```{{execute HOST1}}
+./scripts/compose.py start master --apm-server-url=$ELASTIC_APM_SERVER_URL --apm-server-secret-token=$ELASTIC_APM_SECRET_TOKEN --no-apm-server --no-elasticsearch --no-kibana --with-opbeans-node --with-opbeans-ruby --with-opbeans-go  --with-metricbeat --with-filebeat```{{execute HOST1}}
 
 This will take a little while.
 
