@@ -7,7 +7,7 @@ We want to add a span that measure the time spent in the method "product()" (not
 
 See the documentation to understand how `@CaptureSpan` works: https://www.elastic.co/guide/en/apm/agent/java/master/public-api.html#api-capture-span
 
-Add the span now.
+Try adding something like `@CaptureSpan("my product span")` now.
 
 ### Adding a tag to a span
 
@@ -26,11 +26,13 @@ Please add the tag to the span now.
 `CTRL-C`{{execute interrupt}}
 
 
-### Re-compile
+### Compile
 ```cd /root/course/opbeans/
 docker-compose -f docker-compose-elastic-cloud.yml build```{{execute HOST1}} 
 
-Don't worry if you see output along the lines of 
+This will take a bit of time the first time. Subsequent compiles will be much faster.
+
+Don't worry if you see output along the lines of:
 
 ```
 [ERROR] Error fetching link ...
@@ -43,6 +45,7 @@ WARNING: An illegal reflective access operation has occurred
 ```
 
 Ignore those.
+
 
 ### Re-start the application
 ```

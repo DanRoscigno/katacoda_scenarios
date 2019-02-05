@@ -22,20 +22,16 @@ Replace your instrumentation @CaptureSpan instrumentation with an Open Tracing i
 ```
 @GetMapping("/products/{productId}")
 ProductDetail product(@PathVariable long productId) {
-final Tracer tracer = GlobalTracer();
-final Span span = tracer.buildSpan("OpenTracing product span")
-        .withTag("productId", Long.toString(productId))
-        .start();
-try (Scope scope = tracer.scopeManager().activate(span, false)) {
-    return productRepository.getOneDetail(productId);
-} finally {
-    span.finish();
+    final Tracer tracer = GlobalTracer.get();
+    final Span span = tracer.buildSpan("OpenTracing product span")
+            .withTag("productId", Long.toString(productId))
+            .start();
+    try (Scope scope = tracer.scopeManager().activate(span, false)) {
+        return productRepository.getOneDetail(productId);
+    } finally {
+        span.finish();
+    }
 }
-```
-
-You'll need to add this import at the top:
-```
-import io.opentracing.util.GlobalTracer;
 ```
 
 
