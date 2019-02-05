@@ -18,3 +18,16 @@ git checkout explicit-networks
 
 This will take a little while.
 
+
+### Look at the results in Kibana
+
+An automatic load generator was started, so data should already be flowing into your application. 
+
+To see Distributed Tracing traces:
+
+1. Go to your Kibana on ESS
+1. In the APM tab, find the "Traces" tab.
+1. Look for an interesting endpoint, for exmaple `GET /api/orders`
+1. Use the "Transactions duration distribution" and pick one of the slower transactions, to the far right
+1. Low and behold the timeline with distributed traces.
+
