@@ -34,6 +34,5 @@ docker-compose -f ./docker-compose-elastic-cloud.yml up```{{execute HOST1}}
 
 ### Look at the results in Kibana
 
-1. When the application has started up again, generate some traffic by browser around the site: https://[[HOST_SUBDOMAIN]]-8000-[[KATACODA_HOST]].environments.katacoda.com/
-1. Then go look at the opbeans app in Kibana
-
+1. When the application has started, generate some traffic by browsing around the site: https://[[HOST_SUBDOMAIN]]-8000-[[KATACODA_HOST]].environments.katacoda.com/
+1. Then go look at the opbeans app in Kibana (in your Elasticsearch Service in Elastic Cloud instance)
