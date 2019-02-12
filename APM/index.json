@@ -6,6 +6,18 @@
     "steps": [
       {
         "text": "step01.md"
+      },
+      {
+        "text": "step-capture-span-annotation.md"
+      },
+      {
+        "text": "step-open-tracing.md"
+      },
+      {
+        "text": "step-env-method-pattern.md"
+      },
+      {
+        "text": "step-distributed-tracing.md"
       }
     ],
     "intro": {
