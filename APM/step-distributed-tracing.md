@@ -6,6 +6,13 @@ We can demonstrate distributed tracing by booting up more services and have them
 
 On the APM team we have an "opbeans" application that is written in every programming language that our agents support. We have a simple tool that boots them all up and make them talk to each other.
 
+### Shutdown the running app
+`CTRL-C`{{execute interrupt}}
+
+### Make sure the prompt came back
+`echo "hi"`{{execute HOST1}}
+
+### Grab the integration testing app
 Let's try to start it now.
 
 Run `git clone https://github.com/roncohen/apm-integration-testing.git`{{execute HOST1}}

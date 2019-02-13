@@ -38,6 +38,9 @@ ProductDetail product(@PathVariable long productId) {
 ### Shutdown your container
 `CTRL-C`{{execute interrupt}}
 
+### Make sure the prompt came back
+`echo "hi"`{{execute HOST1}}
+
 
 ### Re-compile
 ```docker-compose -f docker-compose-elastic-cloud.yml build```{{execute HOST1}} 

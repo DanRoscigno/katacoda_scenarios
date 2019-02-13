@@ -25,6 +25,9 @@ Please add the tag to the span now.
 ### Shutdown your container
 `CTRL-C`{{execute interrupt}}
 
+### Make sure the prompt came back
+`echo "hi"`{{execute HOST1}}
+
 
 ### Compile
 ```cd /root/course/opbeans/

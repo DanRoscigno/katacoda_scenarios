@@ -19,6 +19,10 @@ Note: There's always a bit of overhead in instrumentation. `trace_methods` is no
 ### Shutdown your container
 `CTRL-C`{{execute interrupt}}
 
+
+### Make sure the prompt came back
+`echo "hi"`{{execute HOST1}}
+
 ### and source the updated environment file:
 `source /root/course/environment`{{execute HOST1}}
 
