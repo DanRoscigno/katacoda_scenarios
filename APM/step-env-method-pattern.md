@@ -9,13 +9,18 @@ Try setting :
 ```
  export ELASTIC_APM_TRACE_METHODS=co.elastic.apm.opbeans.*#*
 ```
+Edit the file `environment` in the Katacoda UI (just click the document icon to the right) and add the above environment variable.
+`environment`{{open}}
 
-This will instrument every method in the on every class in the co.elastic.apm.opbeans package.
+This will instrument every method of every class in the co.elastic.apm.opbeans package.
 
 Note: There's always a bit of overhead in instrumentation. `trace_methods` is not meant as a way to instrument every method in an application.
 
 ### Shutdown your container
 `CTRL-C`{{execute interrupt}}
+
+### and source the updated environment file:
+`source /root/course/environment`{{execute HOST1}}
 
 
 ### Re-compile
