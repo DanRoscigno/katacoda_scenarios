@@ -1,1 +1,1 @@
-# During this tutorial we created a Kubernetes cluster, deployed a sample application, deployed Filebeat from Elastic, configured Filebeat to connect to an Elasticsearch Service deployment running in Elastic Cloud, and viewed logs and metrics in the Elasticsearch Service Kibana. #
+# During this scenario you learned about APM spans, tags, and distributed tracing and the value this brings to you by increasing the observability of your apps.  Get more information at https://www.elastic.co/solutions/apm #
