@@ -1,6 +1,6 @@
 {
   "title": "ELK hints based k8s autodiscover: logs & metrics",
-  "description": "Autodiscover your k8s env and send to Elasticsearch Service in Elastic Cloud",
+  "description": "Autodiscover your k8s env with Elastic Beats and send to Elasticsearch Service in Elastic Cloud",
   "details": {
     "steps": [
       {
