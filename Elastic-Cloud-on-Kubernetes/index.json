@@ -1,6 +1,6 @@
 {
   "title": "Elastic Cloud on Kubernetes ",
-  "description": "Elastic Cloud on Kubernetes",
+  "description": "Deploy Elastic Cloud on Kubernetes, and create and Elasticsearch cluster with Kibana.",
   "details": {
     "steps": [
       {
