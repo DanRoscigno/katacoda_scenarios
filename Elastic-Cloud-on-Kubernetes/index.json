@@ -1,0 +1,37 @@
+{
+  "title": "Elastic Cloud on Kubernetes",
+  "description": "Elastic Cloud on Kubernetes",
+  "details": {
+    "steps": [
+      {
+        "title": "1. Verify that Kubernetes is ready",
+        "text": "step1-verify-that-kubernetes-is-ready.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "*",
+          "target": "/root/course"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "uilayout": "terminal",
+    "uieditorpath": "/root/course",
+    "showdashboard": true,
+    "dashboards": [
+      { "name": "Kibana", "port": 30601 }
+    ]
+  },
+  "backend": {
+    "imageid": "kubernetes-cluster-running"
+  }
+}
