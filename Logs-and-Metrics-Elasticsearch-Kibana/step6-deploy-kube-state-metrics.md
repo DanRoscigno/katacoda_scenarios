@@ -8,7 +8,7 @@ kube-state-metrics is a container provided by Kubernetes to make the state of po
 
 ### Deploy kube-state-metrics
 
-`kubectl apply -f /root/course/kube-state-metrics/kubernetes`{{execute HOST1}}
+`kubectl apply -f /root/course/kube-state-metrics/examples/standard`{{execute HOST1}}
 
 ### Verify that kube-state-metrics is available
 
