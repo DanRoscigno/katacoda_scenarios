@@ -31,6 +31,9 @@ data:
 
     cloud.id: ${ELASTIC_CLOUD_ID}
     cloud.auth: elastic:${ELASTIC_PASSWORD}
+    output.elasticsearch:
+      # Array of hosts to connect to.
+      hosts: ["localhost:9200"]
 ---      
 apiVersion: apps/v1
 kind: DaemonSet
